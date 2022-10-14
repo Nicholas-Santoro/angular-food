@@ -9,9 +9,8 @@ export class FoodService {
 
   getAll():String[]{
     return [
-      '/assets/image/foods/aglio-olio-peperoncino.jpg',
-      '/assets/image/foods/carbonara.jpeg',
-      '/assets/image/foods/zuppa-patate-cipolle.jpg',
+      '/assets/image/foods/aglio-olio.jpg',
+      '/assets/image/foods/carbonara.jpg',
       '/assets/image/foods/hamburger.jpg',
       '/assets/image/foods/filetto-manzo.jpg',
       '/assets/image/foods/fiorentina.jpg',
