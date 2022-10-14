@@ -1,1 +1,18 @@
-<p>food-page works!</p>
+
+<div class="container">
+    <img [src]="food.imageUrl" [alt]="food.name" />
+</div>
+<div class="details">
+    <div class="header">
+        <span class="name">
+            {{food.name}}
+        </span>
+        <div class="cook-time">
+            <span>
+                Il tempo di preparazione è di <strong>{{food.cookTime}}</strong> minuti
+            </span>
+        </div>
+
+        <div class="price">
+            <span>{{food.price|currency:'€'}}</span>
+        </div>

@@ -8,6 +8,10 @@ export class FoodService {
 
   constructor() { }
 
+  getFoodById(id: number):Food{
+    return this.getAll().find(food => food.id == id)!;
+  }
+
   getAll():Food[]{
     return [
       {
@@ -16,7 +20,7 @@ export class FoodService {
         cookTime:'10',
         price: 9,
         imageUrl:'/assets/image/foods/aglio-olio.jpg',
-        tags:['pasta', 'pranzo']
+
       },
       {
         id:2,
@@ -24,7 +28,7 @@ export class FoodService {
         cookTime:'25',
         price: 11,
         imageUrl:'/assets/image/foods/carbonara.jpg',
-        tags:['pasta', 'pranzo']
+
       },
       {
         id:3,
@@ -32,7 +36,7 @@ export class FoodService {
         cookTime:'10',
         price: 17,
         imageUrl:'/assets/image/foods/filetto-manzo.jpg',
-        tags:['pranzo']
+
       },
       {
         id:4,
@@ -40,7 +44,7 @@ export class FoodService {
         cookTime:'15-20',
         price: 25,
         imageUrl:'/assets/image/foods/fiorentina.jpg',
-        tags:[ 'pranzo']
+
       },
       {
         id:5,
@@ -48,7 +52,7 @@ export class FoodService {
         cookTime:'40-55',
         price: 7,
         imageUrl:'/assets/image/foods/hamburger.jpg',
-        tags:['hamburger', 'pranzo']
+
       },
       {
         id:6,
@@ -56,7 +60,7 @@ export class FoodService {
         cookTime:'25',
         price: 5,
         imageUrl:'/assets/image/foods/patatine.jpg',
-        tags:['fast-food', 'fritto']
+
       },
       
      
