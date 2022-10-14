@@ -23,3 +23,19 @@ li a:hover{
     opacity: 0.9;
     cursor: pointer;
 }
+
+.content{
+    padding: .5rem 1rem;
+    position: relative;
+}
+
+.cook-time{
+    font-size: .8rem;
+    flex: 3;
+    text-align: left;
+}
+
+.price{
+    color:#414141;
+    margin-top: .7rem;
+}
